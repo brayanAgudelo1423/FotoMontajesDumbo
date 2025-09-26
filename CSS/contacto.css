@@ -1,0 +1,140 @@
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background: radial-gradient(ellipse at top left, #edf2f6 0%, #080f14 70%, #f9f8f8 100%) !important;
+    border-radius: 0;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    z-index: 999;
+    box-shadow: none;
+    padding: 32px 0 0 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Transición profesional: opacidad, desenfoque y desplazamiento */
+    transition:
+      opacity 0.5s cubic-bezier(.4,0,.2,1),
+      filter 0.5s cubic-bezier(.4,0,.2,1),
+      transform 0.5s cubic-bezier(.4,0,.2,1),
+      visibility 0.5s cubic-bezier(.4,0,.2,1),
+      background 0.3s;
+    visibility: visible;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+  .navbar-collapse:not(.show) {
+    visibility: hidden;
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(-40px);
+    transition:
+      opacity 0.5s cubic-bezier(.4,0,.2,1),
+      filter 0.5s cubic-bezier(.4,0,.2,1),
+      transform 0.5s cubic-bezier(.4,0,.2,1),
+      visibility 0.5s cubic-bezier(.4,0,.2,1);
+  }
+  .navbar-nav {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 40px;
+    align-items: flex-start !important;
+  }
+  .navbar-nav .nav-link {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: none !important;
+    border-radius: 0;
+    margin-bottom: 24px;
+    font-weight: 400;
+    text-align: left;
+    transition: color 0.2s;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:focus,
+  .navbar-nav .nav-link:hover {
+    color: #111 !important;
+    background: none !important;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .navbar-toggler {
+    background: transparent !important;
+    border: none !important;
+    position: fixed;
+    top: 18px;
+    left: 18px; /* Cambia right por left para ponerlo al lado izquierdo */
+    z-index: 1001;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-title,
+.contact-form,
+.contact-info,
+.card,
+.card-img-top {
+  opacity: 0;
+  animation: fadeInUp 0.9s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+.contact-title { animation-delay: 0.2s; }
+.contact-form { animation-delay: 0.4s; }
+.contact-info { animation-delay: 0.6s; }
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.5s; }
+.card:nth-child(3) { animation-delay: 0.7s; }
+.card:nth-child(4) { animation-delay: 0.9s; }
+
+.card {
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12); /* Opcional: sombra suave */
+  background: transparent;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.card:hover {
+  box-shadow: 0 16px 48px 0 rgba(0,0,0,0.22);
+  transform: scale(1.04);
+}
+
+body.contacto-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body.contacto-bg::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: url('../img/comunes/logo.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.18; /* Ajusta la opacidad si quieres más/menos visible */
+  z-index: 0;
+  pointer-events: none;
+}
+.gradient-text-categorias {
+  background: linear-gradient(90deg, #ffb347 0%, #ff5e62 40%, #5ee7df 80%, #b490ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
