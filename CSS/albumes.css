@@ -73,6 +73,41 @@
     filter: invert(1);
   }
 }
+.portafolio-title {
+   font-size: 3.5rem;
+   font-weight: 900;
+   letter-spacing: 8px;
+   background: linear-gradient(135deg, #be3030 0%, #1f1c1c 50%, #1d1b1b 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+   font-family: 'Arial', sans-serif;
+   margin-top: 5px !important;
+   margin-bottom: 10px;
+   animation: titleFadeIn 1.2s ease-out;
+   transition: all 0.4s ease;
+   cursor: pointer;
+}
+.portafolio-title {
+   font-size: 3.5rem;
+   color: #000000;
+   font-weight: 300;
+   letter-spacing: 1px;
+   opacity: 0.9;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+   margin-bottom: 20px;
+   animation: subtitleFadeIn 1.5s ease-out;
+}
+.portafolio-title:hover {
+   transform: scale(1.05);
+   letter-spacing: 12px;
+   background: linear-gradient(135deg, #ff4040 0%, #2d2d2d 50%, #1a1a1a 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
 body {
   background: radial-gradient(ellipse at top left, #dee1e4 0%, #9eb3c7 70%, #f5f6f7 100%);
   min-height: 100vh;
@@ -184,7 +219,7 @@ footer.bg-dark {
 footer.bg-dark a {
   color: #fff !important;
   text-decoration: underline;
-  margin: 0 8px;
+  margin: 0 px;
 }
 
 /* Modal imagen */

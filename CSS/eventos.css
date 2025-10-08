@@ -87,13 +87,17 @@
 
 .eventos-title,
 .eventos-title.text-center {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
   font-size: 2.2rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
   margin-top: 40px;
   margin-bottom: 24px;
+}
+.eventos-title.text-center:hover {
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  transform: scale(1.05);
 }
 
 .card {
@@ -141,4 +145,82 @@ footer.bg-dark a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   /* text-fill-color: transparent; */
+}
+.portafolio-title {
+   font-size: 3.5rem;
+   font-weight: 900px;
+   letter-spacing: 8px;
+   background: linear-gradient(135deg, #be3030 0%, #1f1c1c 50%, #1d1b1b 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+   font-family: 'Arial', sans-serif;
+   margin-top: 100px !important;
+   margin-bottom: 0px;
+   animation: titleFadeIn 1.2s ease-out;
+   transition: all 0.4s ease;
+   cursor: pointer;
+}
+.portafolio-title:hover {
+   transform: scale(1.05);
+   letter-spacing: 12px;
+   background: linear-gradient(135deg, #ff4040 0%, #2d2d2d 50%, #1a1a1a 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+.portafolio-subtitle {
+   font-size: 1.3rem;
+   color: #000000;
+   font-weight: 300;
+   letter-spacing: 2px;
+   opacity: 0.9;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+   margin-bottom: 20px;
+   animation: subtitleFadeIn 1.5s ease-out;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.portafolio-subtitle:hover {
+   transform: translateY(-3px);
+   letter-spacing: 4px;
+   color: #333333;
+   opacity: 1;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.portafolio-title {
+   font-size: 45px;
+   color: #000000;
+   font-weight: 300;
+   letter-spacing: 2px;
+   opacity: 0.9;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+   margin-bottom: 20px;
+   animation: subtitleFadeIn 1.5s ease-out;
+}
+
+.portafolio-description {
+   color: #000000;
+   font-size: 1rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+   opacity: 0.8;
+   font-style: italic;
+   margin-top: 15px;
+   animation: descriptionFadeIn 1.8s ease-out;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.portafolio-description:hover {
+   transform: translateY(-2px);
+   letter-spacing: 2px;
+   color: #222222;
+   opacity: 1;
+   font-size: 1.05rem;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
