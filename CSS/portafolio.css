@@ -65,7 +65,7 @@
     border: none !important;
     position: fixed;
     top: 18px;
-    left: 18px; /* Cambia right por left para ponerlo al lado izquierdo */
+    left: 18px; 
     z-index: 1001;
   }
   .navbar-toggler .navbar-toggler-icon {

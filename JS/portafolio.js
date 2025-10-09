@@ -9,7 +9,7 @@ document.querySelectorAll('.card-img-top').forEach(function(img) {
     });
 });
 
-// Limpiar la imagen al cerrar el modal
+// Cerrar el modal
 document.getElementById('imageModal').addEventListener('hidden.bs.modal', function () {
     document.getElementById('modalImage').src = '';
 });
