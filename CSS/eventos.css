@@ -13,7 +13,6 @@
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    /* Transición profesional: opacidad, desenfoque y desplazamiento */
     transition:
       opacity 0.5s cubic-bezier(.4,0,.2,1),
       filter 0.5s cubic-bezier(.4,0,.2,1),
@@ -66,17 +65,13 @@
     border: none !important;
     position: fixed;
     top: 18px;
-    left: 18px; /* Cambia right por left para ponerlo al lado izquierdo */
+    left: 18px; 
     z-index: 1001;
   }
   .navbar-toggler .navbar-toggler-icon {
     filter: invert(1);
   }
 }
-/* body {
-  background: radial-gradient(ellipse at top, #06192b 60%, #ffffff 100%);
-  min-height: 100vh;
-} */
  body {
     background: radial-gradient(ellipse at top left, #d0d0d0 0%, #626262 70%, #000000 100%);
 
@@ -103,7 +98,6 @@
 .card {
   border: none;
   background: rgba(255,255,255,0.03);
-  /* box-shadow: 0 2px 12px rgba(0,0,0,0.10); */
   transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
 }
 
@@ -144,7 +138,6 @@ footer.bg-dark a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
 .portafolio-title {
    font-size: 3.5rem;

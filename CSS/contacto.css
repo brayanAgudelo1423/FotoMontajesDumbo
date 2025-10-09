@@ -13,7 +13,6 @@
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    /* Transición profesional: opacidad, desenfoque y desplazamiento */
     transition:
       opacity 0.5s cubic-bezier(.4,0,.2,1),
       filter 0.5s cubic-bezier(.4,0,.2,1),
@@ -66,7 +65,7 @@
     border: none !important;
     position: fixed;
     top: 18px;
-    left: 18px; /* Cambia right por left para ponerlo al lado izquierdo */
+    left: 18px; 
     z-index: 1001;
   }
   .navbar-toggler .navbar-toggler-icon {
@@ -103,7 +102,7 @@
 
 .card {
   border: none !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12); /* Opcional: sombra suave */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   background: transparent;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
   transition: box-shadow 0.3s cubic-bezier(.4,0,.2,1), transform 0.3s cubic-bezier(.4,0,.2,1);
@@ -127,7 +126,7 @@ body.contacto-bg::before {
   width: 100vw; height: 100vh;
   background: url('../img/comunes/logo.jpg') no-repeat center center;
   background-size: cover;
-  opacity: 0.18; /* Ajusta la opacidad si quieres más/menos visible */
+  opacity: 0.18; 
   z-index: 0;
   pointer-events: none;
 }
@@ -136,5 +135,4 @@ body.contacto-bg::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
 }
